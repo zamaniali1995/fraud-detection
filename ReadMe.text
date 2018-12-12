@@ -1,0 +1,28 @@
+In order to run python codes you have to install the following packages:
+
+1.tensorflow
+2.sklearn
+3.pandas
+4.numpy
+5.seaborn
+6.matplotlib
+7.seaborn
+8.mlxtend
+
+
+**********************************
+In the Q.1 folder we input codes of fraud detection with linear regression model and two sklearn and tensorflow librarys.
+**********************************
+In tne Q.3 folder we input codes of fraud detection with sklearn library.
+**********************************
+In the Q.4 folder we input codes of fraud detection with tensorflow library.
+**********************************
+In the dataSet folder there is creditcard dataset.
+**********************************
+In the figures folder there are plots.
+**********************************
+You can see final report in the report folder.
+**********************************
+//////////////////////////////////
+zamaniali1995@gmail.com
+/////////////////////////////////
