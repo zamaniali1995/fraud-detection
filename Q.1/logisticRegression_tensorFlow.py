@@ -28,10 +28,10 @@ def min_max_normalized(data):
     return np.divide(data - col_mean, col_max - col_min)
 #%%Check datasret
 import os
-print(os.listdir("./dataset"))
+print(os.listdir("../dataSet"))
 #%%Read the data
 print('Loading the dataset.....')
-credit_card = pd.read_csv('./dataset/creditcard.csv')
+credit_card = pd.read_csv('../dataSet/creditcard.csv')
 print('Dataset shape: ',credit_card.shape)
 print('Dataset was loaded!!!')
 #%%Plot fraud vs nonfraud and heatmap
@@ -48,6 +48,32 @@ cmap = sns.diverging_palette(220, 10, as_cmap=True)
 f, ax = plt.subplots(figsize=(11, 9))
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
             square=True, linewidths=.5, cbar_kws={"shrink": .5})
+#%%
+non_fraud = credit_card[credit_card.Class == 0]
+non_fraud.Amount.describe()
+#%%
+fraud = credit_card[credit_card.Class == 1]
+fraud.Amount.describe()
+#%%
+#plot of high value transactions
+bins = np.linspace(200, 2500, 100)
+plt.hist(non_fraud.Amount, bins, alpha=1, normed=True, label='Non_fraud')
+plt.hist(fraud.Amount, bins, alpha=0.6, normed=True, label='Fraud')
+plt.legend(loc='upper right')
+plt.title("Amount by percentage of transactions (transactions \$200+)")
+plt.xlabel("Transaction amount (USD)")
+plt.ylabel("Percentage of transactions (%)");
+plt.show()
+#%%
+bins = np.linspace(0, 48, 48) #48 hours
+plt.hist((non_fraud.Time/(60*60)), bins, alpha=1, normed=True, label='Non_fraud')
+plt.hist((fraud.Time/(60*60)), bins, alpha=0.6, normed=True, label='Fraud')
+plt.legend(loc='upper right')
+plt.title("Percentage of transactions by hour")
+plt.xlabel("Transaction time as measured from first transaction in the dataset (hours)")
+plt.ylabel("Percentage of transactions (%)");
+#plt.hist((df.Time/(60*60)),bins)
+plt.show()
 #%%
 # set replace=False, Avoid double sampling
 X = credit_card.drop(columns='Class', axis=1).values.reshape(-1,30)

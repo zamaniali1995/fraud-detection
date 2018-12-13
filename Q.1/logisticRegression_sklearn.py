@@ -12,12 +12,11 @@ Created on Thu Dec  6 13:10:34 2018
 #%%
 import numpy as np 
 import pandas as pd
-import tensorflow as tf
-#from sklearn.model_selection import train_test_split
-#from sklearn.preprocessing import StandardScaler
-#from sklearn.linear_model import LogisticRegression
-#from sklearn.pipeline import Pipeline
-#from sklearn.metrics import roc_curve, roc_auc_score, classification_report, accuracy_score, confusion_matrix 
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import roc_curve, roc_auc_score, classification_report, accuracy_score, confusion_matrix 
 import seaborn as sns
 import matplotlib.pyplot as plt
 # Input data files are available in the "../input/" directory.
