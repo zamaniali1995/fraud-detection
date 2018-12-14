@@ -39,7 +39,8 @@ f, ax = plt.subplots(figsize=(7, 5))
 sns.countplot(x='Class', data=credit_card)
 _ = plt.title('# Fraud vs NonFraud')
 _ = plt.xlabel('Class (1==Fraud)')   
-
+plt.savefig("fraudvsnonfraud"+".pdf")
+#%%
 corr=credit_card.corr()
 mask = np.zeros_like(corr, dtype=np.bool)
 mask[np.triu_indices_from(mask)] = True
@@ -48,14 +49,14 @@ cmap = sns.diverging_palette(220, 10, as_cmap=True)
 f, ax = plt.subplots(figsize=(11, 9))
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
             square=True, linewidths=.5, cbar_kws={"shrink": .5})
-#%%
+plt.savefig("heatmap"+".pdf")
+#%%Non fraud data describe
 non_fraud = credit_card[credit_card.Class == 0]
 non_fraud.Amount.describe()
-#%%
+#%%fraud data describe
 fraud = credit_card[credit_card.Class == 1]
 fraud.Amount.describe()
-#%%
-#plot of high value transactions
+#%%plot of high value transactions
 bins = np.linspace(200, 2500, 100)
 plt.hist(non_fraud.Amount, bins, alpha=1, normed=True, label='Non_fraud')
 plt.hist(fraud.Amount, bins, alpha=0.6, normed=True, label='Fraud')
@@ -63,7 +64,8 @@ plt.legend(loc='upper right')
 plt.title("Amount by percentage of transactions (transactions \$200+)")
 plt.xlabel("Transaction amount (USD)")
 plt.ylabel("Percentage of transactions (%)");
-plt.show()
+#plt.show()
+plt.savefig("Amount by percentage of transactions"+".pdf")
 #%%
 bins = np.linspace(0, 48, 48) #48 hours
 plt.hist((non_fraud.Time/(60*60)), bins, alpha=1, normed=True, label='Non_fraud')
