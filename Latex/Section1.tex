@@ -36,7 +36,7 @@
     tabsize=2
 }
 \lstset{style=mystyle}
-\graphicspath{ {../Images/} }
+\graphicspath{ {../} }
 \title{
 	{\large Statistical learning: Second assignment}\\}
 \author{Ali Zamani(96123035)}
@@ -44,36 +44,76 @@
 \maketitle
 
 \newpage
-\section{Import packages}
-\lstinputlisting[language=python, firstline=1, lastline=13]{../pythonCode/TensorFlow.py}
-\section{Load Data Set:}
-In this section we define function loadDataSet for loading data.Inputs of this function are:\\
-1)directory: address of data set file.\\
-2)trainNum:  number of training data.\\
-3)validNum:  number of validation data.\\
-\lstinputlisting[language=python, firstline=14, lastline=36]{../pythonCode/TensorFlow.py}
-\section{Define variables , constants and placeholders of the logistic regression model}
-First we set epochNum=5000 , batchSize=500 , trainNum=3500 ,validNum=100 and learningRate=1e-6 for 
-maximum likelihood and 1e-6 for binary cross-entropy and regularized binary cross-entropy. \\
-Deta set was loded by calling the  loadDataSet function.\\
-we must define to placeholders, one of them for input(named as x) and another one for output(named as y).\\
-Two variables w and b are also defined.\\
-\lstinputlisting[language=python, firstline=37, lastline=54]{../pythonCode/TensorFlow.py} 
-\section{Define logistic regression model, loss functions and optimizers}
-ypredicted was defined for modeling.\\
-Three loss functions lossML, lossBCE, lossRBCE were also defined for maximum likelihood, binary cross-entropy and regularized binary cross-entropy.\\
-Gradient Descent Optimizer was used for optimizing.\\
-\lstinputlisting[language=python, firstline=55, lastline=66]{../pythonCode/TensorFlow.py} 
-\section{Run Session}
-We run the session for three different loss functions ans report the results.
-\lstinputlisting[language=python, firstline=67, lastline=91]{../pythonCode/TensorFlow.py} 
-\section{Results}
-\lstinputlisting[language=python, firstline=92, lastline=110]{../pythonCode/TensorFlow.py} 
-maximum likelihood:\\\\\\\\
-\includegraphics[width=12cm, height=10cm]{ML}\\\\
-binary cross-entropy:\\\\\\
-\includegraphics[width=15cm, height=15cm]{BCE}\\\\\\\\\\\\\\\\
-regularized binary cross-entropy:\\\\\\\\
-\includegraphics[width=15cm, height=15cm]{RBCE}\\
-\href{https://github.com/zamaniali1995/notMNIST-with-TensorFlow-with-two-class-C-and-J}{Source Code}
+\section{Visualize dataset}
+In this project I use creditcard dataset  The dataset contains transactions made by credit cards in September 2013 by European cardholders over a two day period. There are 492 frauds out of a total 284,807 examples. Thus, the dataset is highly unbalanced, with the positive class (frauds) accounting for only 0.172\% of all transactions. You can imagine that any such dataset would be highly unbalanced, as expected fraud or anomalous cases would only make up for a small percentage of the total transactions. Let's have look at our dataset.
+\\
+I used seaborn and matplotlib to visualize dataset.
+\subsection{Import packages and dataset}
+\lstinputlisting[language=python, firstline=1, lastline=21]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=5cm, height=1cm]{/Visualize/import}\\
+\subsection{Balance of Data Visualization}
+Let's get a visual confirmation of the unbalanced data in this fraud dataset.
+\lstinputlisting[language=python, firstline=22, lastline=28]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=12cm, height=9cm]{/Visualize/fraudvsnonfraud}\\
+As you can see, the non-fraud cases strongly outweigh the fraud cases.
+\subsection{Heatmap}
+\lstinputlisting[language=python, firstline=29, lastline=39]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=12cm, height=9cm]{/Visualize/heatmap}\\
+\subsection{Fraud and non-fraud data describe}
+We will cut up the dataset into two data frames, one for non-fraud transactions and the other for fraud.\\
+\lstinputlisting[language=python, firstline=40, lastline=42]{../Visualize/Visualize.py}
+Let's look at some summary statistics and see if there are obvious differences between fraud and non-fraud
+transactions.\\
+\lstinputlisting[language=python, firstline=43, lastline=43]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=5cm, height=2cm]{/Visualize/NonfraudAmount}\\
+\lstinputlisting[language=python, firstline=44, lastline=44]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=5cm, height=2cm]{/Visualize/fraudAmount}\\
+Although the mean is a little higher in the fraud transactions, it is certainly within a standard deviation and so is
+unlikely to be easy to discriminate in a highly precise manner between the classes with pure statistical methods.
+I could run statistical tests (e.g. t-test) to support the claim that the two samples likely come from populations
+with similar means and deviations. However, such statistical methods are not the focus of this article on
+autoencoders.
+\subsection{Visual Exploration of the Transaction Amount Data}
+We are going to get more familiar with the data and try some basic visuals. In anomaly detection datasets it is
+common to have the areas of interest "washed out" by abundant data. The most common method is to simply
+'slice and dice' the data in a couple different ways until something interesting is found. Although this practice is
+common, it is not a scientifically sound way to explore data. There are always non-meaningful quirks to real
+data, so just looking until you "find something interesting" is likely going to result in you finding false positives.
+In other words, you find a random pattern in the current data set that will never be seen again. As a
+famous economist wrote, "If you torture the data long enough, it will confess."\\
+In this dataset, I expect a lot of low-value transactions that will be generally uninteresting (buying cups of coffee,
+lunches, etc). This abundant data is likely to wash out the rest of the data, so I decided to look at the data in a
+number different \$100 and \$1,000 intervals. Since it would be tedious to show reader these graphs, I will only
+show the final graph that only visualizes the transactions above \$200.\\
+\lstinputlisting[language=python, firstline=45, lastline=54]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=12cm, height=9cm]{/Visualize/Amountbypercentageoftransactions}\\
+Since the fraud cases are relatively few in number compared to bin size, we see the data looks predictably more
+variable. In the long tail, especially, we are likely observing only a single fraud transaction. It would be hard to
+differentiate fraud from non-fraud transactions by transaction amount alone.
+\subsection{Visual Exploration of the Data by Hour}
+With a few exceptions, the transaction amount does not look very informative. Let's look at the time of day next.\\
+\lstinputlisting[language=python, firstline=55, lastline=64]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=12cm, height=9cm]{/Visualize/VisualExplorationoftheDatabyHour}\\
+Hour "zero" corresponds to the hour the first transaction happened and not necessarily 12-1am. Given the
+heavy decrease in non-fraud transactions from hours 1 to 8 and again roughly at hours 24 to 32, I am assuming
+those time correspond to nighttime for this dataset. If this is true, fraud tends to occur at higher rates during the
+night. Statistical tests could be used to give evidence for this fact, but are not in the scope of this article. Again,
+however, the potential time offset between normal and fraud transactions is not enough to make a simple,
+precise classifier.
+Next, we will explore the potential interaction between transaction amount and hour to see if any patterns
+emerge.
+\subsection{Visual Exploration of Transaction Amount vs. Hour}
+\lstinputlisting[language=python, firstline=65, lastline=73]{../Visualize/Visualize.py}
+Output:\\
+\includegraphics[width=12cm, height=9cm]{/Visualize/VisualExplorationofTransactionAmountvsHour}\\
+Again, this is not enough to make a good classifier. For example, it would be hard to draw a line that cleanly
+separates fraud and normal transactions. For the experienced Data Scientists in the readership, I am excluding
+more advanced techniques such as the kernel trick.\\
 \end{document}
