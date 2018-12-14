@@ -7,3 +7,8 @@
 \BOOKMARK [2][-]{subsection.0.1.6}{Visual Exploration of the Data by Hour}{section.0.1}% 7
 \BOOKMARK [2][-]{subsection.0.1.7}{Visual Exploration of Transaction Amount vs. Hour}{section.0.1}% 8
 \BOOKMARK [1][-]{section.0.2}{Logistic model with sklearn}{}% 9
+\BOOKMARK [1][-]{section.0.3}{Logistic model with tensorflow}{}% 10
+\BOOKMARK [1][-]{section.0.4}{compare sklearn and tensorflow results for logistic model}{}% 11
+\BOOKMARK [1][-]{section.0.5}{SVM with sklearn}{}% 12
+\BOOKMARK [1][-]{section.0.6}{SVM with tensorflow}{}% 13
+\BOOKMARK [1][-]{section.0.7}{Compare sklearn and tensorflow results for SVM}{}% 14

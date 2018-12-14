@@ -8,10 +8,10 @@ Created on Fri Dec  7 05:47:51 2018
 #%%Parameters
 train_set_num=.8
 seed=5
-# Define the learning rate， batch_size etc.
+#% Define the learning rate， batch_size etc.
 learning_rate = 0.0003
 batch_size = 1000
-epoch_num = 500
+epoch_num = 600
 #%%Imort packages
 import numpy as np # linear algebra
 import seaborn as sns
@@ -34,46 +34,6 @@ print('Loading the dataset.....')
 credit_card = pd.read_csv('../dataSet/creditcard.csv')
 print('Dataset shape: ',credit_card.shape)
 print('Dataset was loaded!!!')
-#%%Plot fraud vs nonfraud and heatmap
-f, ax = plt.subplots(figsize=(7, 5))
-sns.countplot(x='Class', data=credit_card)
-_ = plt.title('# Fraud vs NonFraud')
-_ = plt.xlabel('Class (1==Fraud)')   
-
-corr=credit_card.corr()
-mask = np.zeros_like(corr, dtype=np.bool)
-mask[np.triu_indices_from(mask)] = True
-cmap = sns.diverging_palette(220, 10, as_cmap=True)
-# Draw the heatmap with the mask and correct aspect ratio
-f, ax = plt.subplots(figsize=(11, 9))
-sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
-            square=True, linewidths=.5, cbar_kws={"shrink": .5})
-#%%
-non_fraud = credit_card[credit_card.Class == 0]
-non_fraud.Amount.describe()
-#%%
-fraud = credit_card[credit_card.Class == 1]
-fraud.Amount.describe()
-#%%
-#plot of high value transactions
-bins = np.linspace(200, 2500, 100)
-plt.hist(non_fraud.Amount, bins, alpha=1, normed=True, label='Non_fraud')
-plt.hist(fraud.Amount, bins, alpha=0.6, normed=True, label='Fraud')
-plt.legend(loc='upper right')
-plt.title("Amount by percentage of transactions (transactions \$200+)")
-plt.xlabel("Transaction amount (USD)")
-plt.ylabel("Percentage of transactions (%)");
-plt.show()
-#%%
-bins = np.linspace(0, 48, 48) #48 hours
-plt.hist((non_fraud.Time/(60*60)), bins, alpha=1, normed=True, label='Non_fraud')
-plt.hist((fraud.Time/(60*60)), bins, alpha=0.6, normed=True, label='Fraud')
-plt.legend(loc='upper right')
-plt.title("Percentage of transactions by hour")
-plt.xlabel("Transaction time as measured from first transaction in the dataset (hours)")
-plt.ylabel("Percentage of transactions (%)");
-#plt.hist((df.Time/(60*60)),bins)
-plt.show()
 #%%
 # set replace=False, Avoid double sampling
 X = credit_card.drop(columns='Class', axis=1).values.reshape(-1,30)
@@ -192,28 +152,17 @@ _ = plt.xlabel('False positive rate')
 _ = plt.ylabel('True positive rate')
 plt.style.use('seaborn')
 plt.savefig('auc_roc.png', dpi=600)
-test_y_hat_10 = (1.0/(1.0 + np.exp(-(np.matmul(test_X,w_value)+b_value))) > 0.06 )*1
-train_y_hat_10 = (1.0/(1.0 + np.exp(-(np.matmul(train_X,w_value)+b_value))) > 0.06 )*1
+test_y_hat_10 = (1.0/(1.0 + np.exp(-(np.matmul(test_X,w_value)+b_value))) > 0.05 )*1
+train_y_hat_10 = (1.0/(1.0 + np.exp(-(np.matmul(train_X,w_value)+b_value))) > 0.05 )*1
 test_accuracy_10 = accuracy_score(test_y,test_y_hat_10)*100
 test_auc_roc_10 = roc_auc_score(test_y, test_y_hat_10)*100
-print('Confusion matrix for train data (0.1):\n', confusion_matrix(test_y, 
+print('Confusion matrix for train data (0.05):\n', confusion_matrix(test_y, 
                                                              test_y_hat_10))
-print('Confusion matrix for test data(0.1):\n', confusion_matrix(train_y, 
+print('Confusion matrix for test data(0.05):\n', confusion_matrix(train_y, 
                                                              train_y_hat_10))
-print('Training accuracy (0.1): ' ,test_accuracy_10)
-print('Training AUC (0.1): ' , test_auc_roc_10)
-print(classification_report(test_y, test_y_hat_10, digits=6))
-#    label=[tf.count_nonzero(test_y) ,len(test_y)-tf.count_nonzero(test_y)]
-#    p=sess.run(tf.round(tf.sigmoid(logit)),feed_dict={x: test_X})
-#    prediction=label=[np.count_nonzero(p) ,
-#                      len(p)-np.count_nonzero(p)]        
-#    confusion=tf.confusion_`matrix(labels=label,predictions=prediction
-#                                  ,num_classes=2)   
-#    print(sess.run(confusion)) 
-#    cm = confusion_matrix_tf.eval(feed_dict={x: train_X,
-#                                             y: train_y})
-    
-#    fn=sess.run(FN,feed_dict={x:train_X,y:train_y})                                                  
+print('Training accuracy (0.05): ' ,test_accuracy_10)
+print('Training AUC (0.05): ' , test_auc_roc_10)
+print(classification_report(test_y, test_y_hat_10, digits=6))                                                 
 #%%
 fig, ax = plt.subplots(2, 2, figsize=(10, 10))
 fig.suptitle("test accuracy = " + str(test_acc_list[epoch]))
@@ -231,5 +180,5 @@ ax[0][1].legend()
 ax[1][1].plot(train_acc_list, color='red', label='train accuracy') 
 ax[1][1].plot(test_acc_list, color='blue', label='test accuracy')
 ax[1][1].legend()
-plt.savefig("Section1"+".pdf")
+plt.savefig("trainandtest"+".pdf")
 #End main program

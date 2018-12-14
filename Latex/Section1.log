@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.1)  14 DEC 2018 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.1)  14 DEC 2018 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,7 +664,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
 )
-<..//Visualize/import.png, id=46, 467.7475pt x 75.28125pt>
+<..//Visualize/import.png, id=66, 467.7475pt x 75.28125pt>
 File: ..//Visualize/import.png Graphic file (type png)
 <use ..//Visualize/import.png>
 Package pdftex.def Info: ..//Visualize/import.png  used on input line 54.
@@ -675,7 +675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/fraudvsnonfraud.pdf, id=48, 505.89pt x 361.35pt>
+<..//Visualize/fraudvsnonfraud.pdf, id=68, 505.89pt x 361.35pt>
 File: ..//Visualize/fraudvsnonfraud.pdf Graphic file (type pdf)
 <use ..//Visualize/fraudvsnonfraud.pdf>
 Package pdftex.def Info: ..//Visualize/fraudvsnonfraud.pdf  used on input line 
@@ -688,7 +688,7 @@ been already used, duplicate ignored
 l.61 \subsection
                 {Heatmap} [1 <..//Visualize/import.png>]
 (../Visualize/Visualize.py)
-<..//Visualize/heatmap.pdf, id=88, 794.97pt x 650.43pt>
+<..//Visualize/heatmap.pdf, id=108, 794.97pt x 650.43pt>
 File: ..//Visualize/heatmap.pdf Graphic file (type pdf)
 <use ..//Visualize/heatmap.pdf>
 Package pdftex.def Info: ..//Visualize/heatmap.pdf  used on input line 64.
@@ -709,7 +709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/NonfraudAmount.png, id=135, 235.88126pt x 154.5775pt>
+<..//Visualize/NonfraudAmount.png, id=155, 235.88126pt x 154.5775pt>
 File: ..//Visualize/NonfraudAmount.png Graphic file (type png)
 <use ..//Visualize/NonfraudAmount.png>
 Package pdftex.def Info: ..//Visualize/NonfraudAmount.png  used on input line 7
@@ -721,7 +721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/fraudAmount.png, id=136, 234.8775pt x 154.5775pt>
+<..//Visualize/fraudAmount.png, id=156, 234.8775pt x 154.5775pt>
 File: ..//Visualize/fraudAmount.png Graphic file (type png)
 <use ..//Visualize/fraudAmount.png>
 Package pdftex.def Info: ..//Visualize/fraudAmount.png  used on input line 75.
@@ -732,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--93
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/Amountbypercentageoftransactions.pdf, id=184, 433.62pt x 289.08p
+<..//Visualize/Amountbypercentageoftransactions.pdf, id=205, 433.62pt x 289.08p
 t>
 File: ..//Visualize/Amountbypercentageoftransactions.pdf Graphic file (type pdf
 )
@@ -746,7 +746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/VisualExplorationoftheDatabyHour.pdf, id=202, 433.62pt x 289.08p
+<..//Visualize/VisualExplorationoftheDatabyHour.pdf, id=222, 433.62pt x 289.08p
 t>
 File: ..//Visualize/VisualExplorationoftheDatabyHour.pdf Graphic file (type pdf
 )
@@ -770,50 +770,132 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
 )
-<..//LogisticModelwithSklearn/auc_roc.png, id=372, 650.43pt x 433.62pt>
+<..//LogisticModelwithSklearn/auc_roc.png, id=392, 650.43pt x 433.62pt>
 File: ..//LogisticModelwithSklearn/auc_roc.png Graphic file (type png)
 <use ..//LogisticModelwithSklearn/auc_roc.png>
 Package pdftex.def Info: ..//LogisticModelwithSklearn/auc_roc.png  used on inpu
 t line 122.
 (pdftex.def)             Requested size: 284.53264pt x 199.16988pt.
-<..//LogisticModelwithSklearn/50.png, id=373, 425.59pt x 215.80624pt>
+<..//LogisticModelwithSklearn/50.png, id=393, 425.59pt x 215.80624pt>
 File: ..//LogisticModelwithSklearn/50.png Graphic file (type png)
 <use ..//LogisticModelwithSklearn/50.png>
 Package pdftex.def Info: ..//LogisticModelwithSklearn/50.png  used on input lin
 e 123.
 (pdftex.def)             Requested size: 142.26343pt x 56.90518pt.
-<..//LogisticModelwithSklearn/90.png, id=374, 526.96875pt x 182.6825pt>
+<..//LogisticModelwithSklearn/90.png, id=394, 526.96875pt x 182.6825pt>
 File: ..//LogisticModelwithSklearn/90.png Graphic file (type png)
 <use ..//LogisticModelwithSklearn/90.png>
 Package pdftex.def Info: ..//LogisticModelwithSklearn/90.png  used on input lin
 e 124.
 (pdftex.def)             Requested size: 142.26738pt x 56.90416pt.
-<..//LogisticModelwithSklearn/5.png, id=375, 522.95375pt x 182.6825pt>
+<..//LogisticModelwithSklearn/5.png, id=395, 522.95375pt x 182.6825pt>
 File: ..//LogisticModelwithSklearn/5.png Graphic file (type png)
 <use ..//LogisticModelwithSklearn/5.png>
 Package pdftex.def Info: ..//LogisticModelwithSklearn/5.png  used on input line
  125.
 (pdftex.def)             Requested size: 142.26068pt x 56.90416pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
- [8 <..//LogisticModelwithSklearn/auc_roc.png> <..//LogisticModelwithSklearn/50
-.png> <..//LogisticModelwithSklearn/90.png> <..//LogisticModelwithSklearn/5.png
->]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
- (./Section1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+
+(../Logisticmodelwithtensorflow/logisticRegression_tensorFlow.py [8 <..//Logist
+icModelwithSklearn/auc_roc.png> <..//LogisticModelwithSklearn/50.png> <..//Logi
+sticModelwithSklearn/90.png> <..//LogisticModelwithSklearn/5.png>]
+
+! Package inputenc Error: Unicode char �\expandafter\lst@FillFixed@ (U+AA3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 #% Define the learning rate， 
+                                    batch_size etc.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 #% Define the learning rate， 
+                                    batch_size etc.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 #% Define the learning rate， 
+                                    batch_size etc.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[9] [10] [11])
+<..//Logisticmodelwithtensorflow/roc.png, id=579, 553.06625pt x 387.4475pt>
+File: ..//Logisticmodelwithtensorflow/roc.png Graphic file (type png)
+<use ..//Logisticmodelwithtensorflow/roc.png>
+Package pdftex.def Info: ..//Logisticmodelwithtensorflow/roc.png  used on input
+ line 129.
+(pdftex.def)             Requested size: 284.52426pt x 199.16818pt.
+<..//Logisticmodelwithtensorflow/trainandtest.pdf, id=580, 722.7pt x 722.7pt>
+File: ..//Logisticmodelwithtensorflow/trainandtest.pdf Graphic file (type pdf)
+<use ..//Logisticmodelwithtensorflow/trainandtest.pdf>
+Package pdftex.def Info: ..//Logisticmodelwithtensorflow/trainandtest.pdf  used
+ on input line 130.
+(pdftex.def)             Requested size: 426.79732pt x 256.06956pt.
+<..//Logisticmodelwithtensorflow/run.png, id=581, 530.98375pt x 277.035pt>
+File: ..//Logisticmodelwithtensorflow/run.png Graphic file (type png)
+<use ..//Logisticmodelwithtensorflow/run.png>
+Package pdftex.def Info: ..//Logisticmodelwithtensorflow/run.png  used on input
+ line 131.
+(pdftex.def)             Requested size: 142.26563pt x 56.90244pt.
+<..//Logisticmodelwithtensorflow/50.png, id=582, 409.53pt x 292.09125pt>
+File: ..//Logisticmodelwithtensorflow/50.png Graphic file (type png)
+<use ..//Logisticmodelwithtensorflow/50.png>
+Package pdftex.def Info: ..//Logisticmodelwithtensorflow/50.png  used on input 
+line 132.
+(pdftex.def)             Requested size: 142.26283pt x 56.90184pt.
+<..//Logisticmodelwithtensorflow/5.png, id=583, 416.55624pt x 276.03125pt>
+File: ..//Logisticmodelwithtensorflow/5.png Graphic file (type png)
+<use ..//Logisticmodelwithtensorflow/5.png>
+Package pdftex.def Info: ..//Logisticmodelwithtensorflow/5.png  used on input l
+ine 133.
+(pdftex.def)             Requested size: 142.26285pt x 56.90265pt.
+
+Overfull \hbox (81.79732pt too wide) in paragraph at lines 128--134
+[] 
+ []
+
+[12] [13 <..//Logisticmodelwithtensorflow/roc.png> <..//Logisticmodelwithtensor
+flow/trainandtest.pdf> <..//Logisticmodelwithtensorflow/run.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+ [14 <..//Logisticmodelwithtensorflow/50.png> <..//Logisticmodelwithtensorflow/
+5.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
+
+(./Section1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `Section1.out' has not changed.
-(rerunfilecheck)             Checksum: B25D42DA962EB455FA032B018128090D;721.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+(rerunfilecheck)             Checksum: 045953D030D4440C24AE990CD6E8267C;1079.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 8121 strings out of 492982
- 114477 string characters out of 6134896
- 351307 words of memory out of 5000000
- 11425 multiletter control sequences out of 15000+600000
+ 8435 strings out of 492982
+ 120005 string characters out of 6134896
+ 472308 words of memory out of 5000000
+ 11534 multiletter control sequences out of 15000+600000
  8488 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,43p,556b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,6n,43p,556b,1904s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
@@ -821,10 +903,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Section1.pdf (9 pages, 486660 bytes).
+Output written on Section1.pdf (15 pages, 607793 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 155 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
