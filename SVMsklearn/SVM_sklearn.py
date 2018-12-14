@@ -29,26 +29,12 @@ def min_max_normalized(data):
     return np.divide(data - col_min, col_max - col_min)
 #%%Check datasret
 import os
-print(os.listdir("./dataset"))
+print(os.listdir("../dataSet"))
 #%%Read the data
 print('Loading the dataset.....')
-credit_card = pd.read_csv('./dataset/creditcard.csv')
+credit_card = pd.read_csv('../dataSet/creditcard.csv')
 print('Dataset shape: ',credit_card.shape)
 print('Dataset was loaded!!!')
-#%%Plot fraud vs nonfraud and heatmap
-f, ax = plt.subplots(figsize=(7, 5))
-sns.countplot(x='Class', data=credit_card)
-_ = plt.title('# Fraud vs NonFraud')
-_ = plt.xlabel('Class (1==Fraud)')   
-
-corr=credit_card.corr()
-mask = np.zeros_like(corr, dtype=np.bool)
-mask[np.triu_indices_from(mask)] = True
-cmap = sns.diverging_palette(220, 10, as_cmap=True)
-# Draw the heatmap with the mask and correct aspect ratio
-f, ax = plt.subplots(figsize=(11, 9))
-sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
-            square=True, linewidths=.5, cbar_kws={"shrink": .5})
 #%%
 # set replace=False, Avoid double sampling
 X = credit_card.drop(columns='Class', axis=1).values.reshape(-1,30)
@@ -65,9 +51,9 @@ train_X = min_max_normalized(train_X)
 test_X = min_max_normalized(test_X)
 #%%
 # Applying SVM Algorithm
-print("-----------------------------------------------------------------------------------")
+print("-------------------------------------------------------")
 print("                                Support Vector Machine                             ")              
-print("-----------------------------------------------------------------------------------")
+print("-------------------------------------------------------")
 
 #Using the rbf kernel to build the initail model.
 classifier= svm.SVC(C= 1, kernel= 'linear', random_state= 0)
