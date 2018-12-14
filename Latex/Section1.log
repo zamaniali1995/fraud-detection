@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.1)  14 DEC 2018 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.1)  14 DEC 2018 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,7 +664,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
 )
-<..//Visualize/import.png, id=42, 467.7475pt x 75.28125pt>
+<..//Visualize/import.png, id=46, 467.7475pt x 75.28125pt>
 File: ..//Visualize/import.png Graphic file (type png)
 <use ..//Visualize/import.png>
 Package pdftex.def Info: ..//Visualize/import.png  used on input line 54.
@@ -675,7 +675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/fraudvsnonfraud.pdf, id=44, 505.89pt x 361.35pt>
+<..//Visualize/fraudvsnonfraud.pdf, id=48, 505.89pt x 361.35pt>
 File: ..//Visualize/fraudvsnonfraud.pdf Graphic file (type pdf)
 <use ..//Visualize/fraudvsnonfraud.pdf>
 Package pdftex.def Info: ..//Visualize/fraudvsnonfraud.pdf  used on input line 
@@ -688,7 +688,7 @@ been already used, duplicate ignored
 l.61 \subsection
                 {Heatmap} [1 <..//Visualize/import.png>]
 (../Visualize/Visualize.py)
-<..//Visualize/heatmap.pdf, id=84, 794.97pt x 650.43pt>
+<..//Visualize/heatmap.pdf, id=88, 794.97pt x 650.43pt>
 File: ..//Visualize/heatmap.pdf Graphic file (type pdf)
 <use ..//Visualize/heatmap.pdf>
 Package pdftex.def Info: ..//Visualize/heatmap.pdf  used on input line 64.
@@ -709,7 +709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--70
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/NonfraudAmount.png, id=131, 235.88126pt x 154.5775pt>
+<..//Visualize/NonfraudAmount.png, id=135, 235.88126pt x 154.5775pt>
 File: ..//Visualize/NonfraudAmount.png Graphic file (type png)
 <use ..//Visualize/NonfraudAmount.png>
 Package pdftex.def Info: ..//Visualize/NonfraudAmount.png  used on input line 7
@@ -721,7 +721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/fraudAmount.png, id=132, 234.8775pt x 154.5775pt>
+<..//Visualize/fraudAmount.png, id=136, 234.8775pt x 154.5775pt>
 File: ..//Visualize/fraudAmount.png Graphic file (type png)
 <use ..//Visualize/fraudAmount.png>
 Package pdftex.def Info: ..//Visualize/fraudAmount.png  used on input line 75.
@@ -732,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--93
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/Amountbypercentageoftransactions.pdf, id=180, 433.62pt x 289.08p
+<..//Visualize/Amountbypercentageoftransactions.pdf, id=184, 433.62pt x 289.08p
 t>
 File: ..//Visualize/Amountbypercentageoftransactions.pdf Graphic file (type pdf
 )
@@ -746,7 +746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
  []
 
 (../Visualize/Visualize.py)
-<..//Visualize/VisualExplorationoftheDatabyHour.pdf, id=198, 433.62pt x 289.08p
+<..//Visualize/VisualExplorationoftheDatabyHour.pdf, id=202, 433.62pt x 289.08p
 t>
 File: ..//Visualize/VisualExplorationoftheDatabyHour.pdf Graphic file (type pdf
 )
@@ -756,48 +756,75 @@ ed on input line 103.
 (pdftex.def)             Requested size: 341.4511pt x 256.08942pt.
  [5 <..//Visualize/Amountbypercentageoftransactions.pdf>] (../Visualize/Visuali
 ze.py)
-<..//Visualize/VisualExplorationofTransactionAmountvsHour.pdf, id=259, 433.62pt
- x 289.08pt>
-File: ..//Visualize/VisualExplorationofTransactionAmountvsHour.pdf Graphic file
- (type pdf)
-<use ..//Visualize/VisualExplorationofTransactionAmountvsHour.pdf>
-Package pdftex.def Info: ..//Visualize/VisualExplorationofTransactionAmountvsHo
-ur.pdf  used on input line 115.
-(pdftex.def)             Requested size: 341.4511pt x 256.08942pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-
 Underfull \hbox (badness 10000) in paragraph at lines 114--119
 
  []
 
-[6 <..//Visualize/VisualExplorationoftheDatabyHour.pdf>] [7 <..//Visualize/Visu
-alExplorationofTransactionAmountvsHour.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+[6 <..//Visualize/VisualExplorationoftheDatabyHour.pdf>]
+(../LogisticModelwithSklearn/logisticRegression_sklearn.py [7]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 49.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
+)
+<..//LogisticModelwithSklearn/auc_roc.png, id=372, 650.43pt x 433.62pt>
+File: ..//LogisticModelwithSklearn/auc_roc.png Graphic file (type png)
+<use ..//LogisticModelwithSklearn/auc_roc.png>
+Package pdftex.def Info: ..//LogisticModelwithSklearn/auc_roc.png  used on inpu
+t line 122.
+(pdftex.def)             Requested size: 284.53264pt x 199.16988pt.
+<..//LogisticModelwithSklearn/50.png, id=373, 425.59pt x 215.80624pt>
+File: ..//LogisticModelwithSklearn/50.png Graphic file (type png)
+<use ..//LogisticModelwithSklearn/50.png>
+Package pdftex.def Info: ..//LogisticModelwithSklearn/50.png  used on input lin
+e 123.
+(pdftex.def)             Requested size: 142.26343pt x 56.90518pt.
+<..//LogisticModelwithSklearn/90.png, id=374, 526.96875pt x 182.6825pt>
+File: ..//LogisticModelwithSklearn/90.png Graphic file (type png)
+<use ..//LogisticModelwithSklearn/90.png>
+Package pdftex.def Info: ..//LogisticModelwithSklearn/90.png  used on input lin
+e 124.
+(pdftex.def)             Requested size: 142.26738pt x 56.90416pt.
+<..//LogisticModelwithSklearn/5.png, id=375, 522.95375pt x 182.6825pt>
+File: ..//LogisticModelwithSklearn/5.png Graphic file (type png)
+<use ..//LogisticModelwithSklearn/5.png>
+Package pdftex.def Info: ..//LogisticModelwithSklearn/5.png  used on input line
+ 125.
+(pdftex.def)             Requested size: 142.26068pt x 56.90416pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+ [8 <..//LogisticModelwithSklearn/auc_roc.png> <..//LogisticModelwithSklearn/50
+.png> <..//LogisticModelwithSklearn/90.png> <..//LogisticModelwithSklearn/5.png
+>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./Section1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `Section1.out' has not changed.
-(rerunfilecheck)             Checksum: D1C007E75E16A3EFE7F4FDCAB9CFAE42;657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+(rerunfilecheck)             Checksum: B25D42DA962EB455FA032B018128090D;721.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 7979 strings out of 492982
- 112088 string characters out of 6134896
- 290307 words of memory out of 5000000
- 11352 multiletter control sequences out of 15000+600000
+ 8121 strings out of 492982
+ 114477 string characters out of 6134896
+ 351307 words of memory out of 5000000
+ 11425 multiletter control sequences out of 15000+600000
  8488 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,43p,556b,1497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,6n,43p,556b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Section1.pdf (8 pages, 1497930 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Section1.pdf (9 pages, 486660 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 98 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 155 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -112,8 +112,15 @@ emerge.
 \subsection{Visual Exploration of Transaction Amount vs. Hour}
 \lstinputlisting[language=python, firstline=65, lastline=73]{../Visualize/Visualize.py}
 Output:\\
-\includegraphics[width=12cm, height=9cm]{/Visualize/VisualExplorationofTransactionAmountvsHour}\\
+%\includegraphics[width=12cm, height=9cm]{/Visualize/VisualExplorationofTransactionAmountvsHour}\\
 Again, this is not enough to make a good classifier. For example, it would be hard to draw a line that cleanly
 separates fraud and normal transactions. For the experienced Data Scientists in the readership, I am excluding
 more advanced techniques such as the kernel trick.\\
+\section{Logistic model with sklearn}
+\lstinputlisting[language=python]{../LogisticModelwithSklearn/logisticRegression_sklearn.py}
+Results:\\
+\includegraphics[width=10cm, height=7cm]{/LogisticModelwithSklearn/auc_roc}\\
+\includegraphics[width=5cm, height=2cm]{/LogisticModelwithSklearn/50}\\
+\includegraphics[width=5cm, height=2cm]{/LogisticModelwithSklearn/90}\\
+\includegraphics[width=5cm, height=2cm]{/LogisticModelwithSklearn/5}
 \end{document}
